@@ -1,13 +1,12 @@
 const CustomError = require("../extensions/custom-error");
 
-module.exports = function countCats(arr) {
-  let count = 0;
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr[i].length; j++) {
-      if (arr[i][j] === '^^') {
-        count++;
-      }
-    }
+function countCats(arr) {
+  let ears = [];
+  for (let item of arr) {
+    ears.push(...item.filter((sign) => sign === '^^'));
   }
-  return count;
-};
+  return ears.length;
+}
+
+module.exports = countCats;
+
