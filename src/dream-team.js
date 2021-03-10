@@ -15,31 +15,3 @@ function createDreamTeam(members) {
 
 module.exports =  createDreamTeam;
 
-console.log(createDreamTeam([
-  'Amelia',
-  null,
-  undefined,
-  'Ruby',
-  'Lily',
-  11,
-  'Grace',
-  22,
-  'Millie',
-  'Daisy',
-  true,
-  'Freya',
-  false,
-  'Erin',
-  new Set([1,2,3,4,5]),
-  'Megan',
-  {
-    'John': 'Smith'
-  },
-  'Jasmine',
-  1,
-  2,
-  3,
-  4,
-  5,
-  'Brooke',
-]));
